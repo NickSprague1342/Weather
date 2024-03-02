@@ -1,0 +1,28 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/sky-wallpaper-video-conferencing_23-2148627719.jpg?w=1800&t=st=1709421599~exp=1709422199~hmac=5b76ae6466df72430308a8a7a0de1b6533d5222d3b379cca6f5dfa24c8c4e32c);
+}
+
+#top-buffer {
+    /* background-color: rgb(17, 86, 205); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 65px;
+}
+
+#app {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+/* .visWea {
+    display: block;
+} */
+
+#closeWea {
+    color: blue;
+}
