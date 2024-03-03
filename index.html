@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,34 @@
     <link rel="stylesheet" href="src/assets/css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+
 <body>
 
     <h1 id="top-buffer">Nicks Weather App</h1>
 
     <div id="app">
         <div v-if="showWeather">
+            <aside class="leftSide">
+                <label for="City-Search" style="padding-right: 5px;" >Search Weather</label>
+                <input type="text" name="City-Search" id="searchForm" placeholder="Search City...">
+            </aside>
             <p class="visWea">{{ weather1 }} - {{ weather2 }} - {{ weather3 }}</p>
         </div>
-                <!-- testing Vue functions -->
+        <!-- testing Vue functions -->
         <!-- <button v-on:click="test3++">Increase Last</button>
         <button @click="test3--">Decrease Last</button> -->
 
-        <button class="startBtn" @click="toggleShowWeather">
-            <span v-if="!showWeather">Open Weather App!</span>
+        <button class="startBtn" style="max-height: 20px; " @click="toggleShowWeather">
+            <span v-if="!showWeather">Open Weather App</span>
             <span v-else id="closeWea">Close Weather App</span>
         </button>
 
         <!-- <div v-show="showTest">Currently Showing Weather Test</div> -->
     </div>
 
-    
+
     <script src="src/app.vue"></script>
 
 </body>
+
 </html>

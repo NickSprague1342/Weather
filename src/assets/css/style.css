@@ -14,7 +14,7 @@ body {
 }
 
 #app {
-    color: red;
+    /* color: red; */
     display: flex;
     justify-content: center;
 }
@@ -25,4 +25,10 @@ body {
 
 #closeWea {
     color: blue;
+}
+
+.leftSide {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 600px;
 }
