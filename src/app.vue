@@ -14,6 +14,13 @@ const app = Vue.createApp({
             this.showWeather = !this.showWeather
         }
     }
+
+    // mount () {
+    //     axios
+    //     .get('https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={f7068d50d7fedd829ed816ac4feb6cbe}')
+    //     .then(response => (this.info = response))
+    //     console.log('testing')
+    // }
 })
 
 app.mount('#app')

@@ -16,10 +16,20 @@
     <div id="app">
         <div v-if="showWeather">
             <aside class="leftSide">
-                <label for="City-Search" style="padding-right: 5px;" >Search Weather</label>
+                <!-- <label for="City-Search" style="padding-right: 5px;" >Search Weather</label> -->
                 <input type="text" name="City-Search" id="searchForm" placeholder="Search City...">
+                <button @click="fetchWeatherData" v-show="showWeather">Search</button>
             </aside>
-            <p class="visWea">{{ weather1 }} - {{ weather2 }} - {{ weather3 }}</p>
+            <!-- <p class="visWea">{{ weather1 }} - {{ weather2 }} - {{ weather3 }}</p> -->
+            <div class="centerDisplay">
+                <ul>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                </ul>
+        </div>
         </div>
         <!-- testing Vue functions -->
         <!-- <button v-on:click="test3++">Increase Last</button>
@@ -30,7 +40,6 @@
             <span v-else id="closeWea">Close Weather App</span>
         </button>
 
-        <!-- <div v-show="showTest">Currently Showing Weather Test</div> -->
     </div>
 
 
